@@ -31,6 +31,7 @@ public class UserService {
         amount = checkForAmount(scan);
         Set<String> roles = new HashSet<>();
         for(int i = 0; i < amount; i++){
+            System.out.println("enter "+(i+1)+" of "+amount+" roles");
             roles.add(scan.nextLine());
         }
         user.setRoles(roles);
@@ -142,6 +143,7 @@ public class UserService {
                         amount = checkForAmount(scan);
                         Set<String> roles = new HashSet<>();
                         for (int i = 0; i < amount; i++) {
+                            System.out.println("enter "+(i+1)+" of "+amount+" roles");
                             roles.add(scan.nextLine());
                         }
                         users.get(index).setRoles(roles);
